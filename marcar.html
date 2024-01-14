@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marcar Consulta</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Marcar Consulta</h1>
+        <form id="marcarForm">
+            <label for="paciente">Escolha o Paciente:</label>
+            <select id="paciente"></select>
+
+            <label for="dia">Dia da Consulta:</label>
+            <input type="text" id="dia" placeholder="DD/MM/AAAA" required>
+
+            <label for="hora">Hora da Consulta:</label>
+            <input type="text" id="hora" placeholder="HH:MM" required>
+
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" required>
+
+            <button type="button" onclick="marcarConsulta()">Marcar Consulta</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
